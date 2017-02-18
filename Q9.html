@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h3>Get dropdown selected value on onchanage event and append in div container</h3>
+    <select id="mySelect">
+      <option value="Audi">Audi
+      <option value="BMW">BMW
+      <option value="Mercedes">Mercedes
+      <option value="Volvo">Volvo
+    </select>
+    <div class="myDiv" style="text-align: center">
+        <h4>selected element</h4>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#mySelect').on('change', function() {
+                $('.myDiv').append(" " + this.value);
+            })
+        })
+    </script>
+</body>
+
+</html>

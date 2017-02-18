@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h2>Retrive the data from server using ajax get call</h2>
+    <button>This button is used to call ajax to retrieve data</button>
+    <div>
+        <p>
+
+        </p>
+        <h3>
+
+        </h3>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $.get("data.txt", function(data, status) {
+                    $('p').append("Data: " + data);
+                    $('h3').append("Status: " + status);
+                });
+            });
+        });
+    </script>
+    </script>
+</body>
+
+</html>

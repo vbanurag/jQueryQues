@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+    <h3>Click event not working on element which added dynamicly or via script, make it work using .on method</h3>
+    <script>
+        var el = $("<p></p>");
+        $(document).ready(function() {
+            $(el.text("P element injected from Script"));
+            $("body").append(el);
+            $(el.on("click", function() {
+                alert(" event has been grenerated");
+            }));
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HelloWorld in Console</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+    <h3>Change the color of element which class name end with "-new"</h3>
+    <p>P element with No id and Class</p>
+    <p class="pclass">P element with class name "Pclass" </p>
+    <p class="p-new">P Element with class name "p-new" </p>
+    <script>
+        $(document).ready(function() {
+            $("[class$=-new]").css("color", "green");
+        });
+    </script>
+</body>
+
+</html>

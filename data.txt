@@ -1,0 +1,2 @@
+Hi this is the data file which is load from server.
+using ajax get call we retieve data

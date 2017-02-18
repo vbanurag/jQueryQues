@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h3>We have bind a click funtion to parent div <br> we want stop it from performing when user clicks on its child li.</h3>
+
+    <div id="clickable">
+        <h3>This is clickable link</h3>
+        <ul>
+            <li>C++</li>
+            <li>Java</li>
+            <li>c#</li>
+        </ul>
+
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#clickable h3").on("click", function(e) {
+                if (e.target != this)
+                    return;
+                alert("click on div element");
+            })
+        })
+    </script>
+</body>
+
+</html>

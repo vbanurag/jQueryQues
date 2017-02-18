@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HelloWorld in Console</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+    <h3>Chagne color of every cell which has numberl larger than 10.</h3>
+    <table id="numbers" style="border:1px solid;border-radius:3px;">
+        <tr>
+            <th>Number</th>
+            <th>Number</th>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>34</td>
+        </tr>
+
+        <tr>
+            <td>27</td>
+            <td>14</td>
+        </tr>
+
+    </table>
+    <script>
+        $("#numbers td").each(function() {
+            if (parseInt($(this).text()) > 10) {
+                $(this).css("background-color", "grey");
+            }
+        });
+    </script>
+</body>
+
+</html>

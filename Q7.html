@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Bind a click function</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h3>Bind a click function to an "click" element and append next "click" next to it.</h3>
+    <p>This is the default </p>
+</body>
+<script>
+    $(document).ready(function() {
+        $('p').on('click', function() {
+            $('p').append(" click");
+        })
+    })
+</script>
+
+</html>

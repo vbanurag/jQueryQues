@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HelloWorld in Console</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+    <h3>Change the font size of ".target" which has parent element with id name "#main"</h3>
+    <div id="main">
+        <span>Span Tag/Element.</span>
+        <p>Text in P element without id</p>
+        <p class="target">Text in The P element with id main.</p>
+        <span>Span after the P tag</span>
+    </div>
+
+    <script>
+        $(function() {
+            $("#main").children(".target").css("font-size", "23px");
+        });
+    </script>
+</body>
+
+</html>

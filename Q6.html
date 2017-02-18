@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HelloWorld in Console</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+    <h3>After page load change the HTML of div element with "p" element</h3>
+    <div id="hb">
+        <H1>H1 Element is here</H1>
+        <h2>H2 element is here</h1>
+            <h3>H3 element is here</h3>
+    </div>
+    <p>P element between both the div</p>
+    <div>
+        <p>P tag in Second Div</p>
+        <div>
+            <span>Span Element in Nested Div</span>
+        </div>
+    </div>
+    <script>
+        var p_element = $("<p></p>")
+        $(function() {
+            $(p_element.text("After load complettion Div changed by p"));
+            $("div").replaceWith(a);
+        });
+    </script>
+</body>
+
+</html>

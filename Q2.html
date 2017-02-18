@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HelloWorld in Console</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+    <h3>Select a ID name "#test" and add class "load" when DOM is loaded</h3>
+    <p id="test">The text effect will be changed after DOM </p>
+
+    <style>
+        .load {
+            color: red;
+            font-size: 25px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#test").addClass("load");
+        });
+    </script>
+</body>
+
+</html>
